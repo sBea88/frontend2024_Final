@@ -31,7 +31,7 @@ nav{
 }
 
 a{
-  color: #000;
+  color: #a25c0c;
   text-decoration: none;
   margin: 5px;
   cursor: pointer;
@@ -40,7 +40,7 @@ a:hover{
   color: rgb(136, 136, 136);
 } 
 
-footer {
+/* footer {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -59,6 +59,49 @@ footer > img{
 footer > p{
   margin: 0;
   padding-top: 0.7rem;
+} */
+
+/* Estilos del footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #780c0c; 
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+footer > div {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Espacio entre los íconos */
+}
+
+footer > div img {
+  width: 30px; /* Tamaño de los íconos de redes sociales */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease; /* Añadir una transición suave */
+}
+
+footer > div img:hover {
+  transform: scale(1.1); /* Efecto de zoom al pasar el cursor por encima */
+}
+
+footer > img {
+  width: 150px; /* Tamaño ajustado para el logo de DH */
+  margin: 0 auto;
 }
 
 form{
@@ -115,8 +158,131 @@ tr:nth-child(even) {
 
 .dark{
   background-color: #12121296;
-  color: white;
+  color: rgb(246, 230, 230);
 }
 .dark > a {
+  color: rgb(239, 232, 232);
+}
+
+body.light {
+  background-color: white;
+  color: black;
+}
+
+body.dark {
+  background-color: #333;
   color: white;
 }
+
+/* nav {
+  display: flex;
+  justify-content: right;
+  padding: 1rem;
+  background-color: #780c0c;
+  position: relative;
+  
+}
+
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav button {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.dark nav {
+  background-color: #444;
+}
+
+.dark a {
+  color: white;
+} */
+
+/* Estilos del Navbar */
+nav {
+  display: flex;
+  justify-content: flex-end; /* Alineación de los elementos a la derecha */
+  align-items: center;
+  padding: 1rem;
+  background-color: #780c0c; /* Color de fondo oscuro para el navbar */
+  position: sticky;
+  top: 0; /* Navbar fijo en la parte superior al hacer scroll */
+  width: 100%;
+  z-index: 100; /* Asegura que el navbar esté sobre otros elementos */
+}
+
+nav a {
+  color: #fcf7f7;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ccc; /* Color al hacer hover en los enlaces */
+}
+
+nav button {
+  background-color: #fff;
+  color: #780c0c;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav button:hover {
+  background-color: #780c0c;
+  color: white;
+}
+
+/* Tema oscuro para el navbar */
+.dark nav {
+  background-color: #780c0c; /* Cambia el color del fondo en el modo oscuro */
+}
+
+.dark nav a {
+  color: white;
+}
+
+.dark nav button {
+  background-color: #444;
+  color: white;
+}
+
+.dark nav button:hover {
+  background-color: white;
+  
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  color: #ba4e4e;
+}
+
+.card {
+  border: 1px solid rgb(101, 193, 186);
+  padding: 20px;
+  border-radius: 8px;
+  color: #7666b2
+} 
+
+.card-image {
+  width: 100%;
+  height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+  border-radius: 8px;
+  margin-bottom: 8px;
+  color:#a97198
+}
+
+
+
